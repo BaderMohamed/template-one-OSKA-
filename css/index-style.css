@@ -1,0 +1,423 @@
+body
+{
+    font-family: 'segoe ui light' !important ;
+    overflow: hidden;
+}
+#loading
+{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: darkgrey;
+    z-index: 999999;
+}
+#navbar
+{
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s ;
+}
+#btnUp
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    display: none;
+}
+#option
+{
+    
+    position: fixed;
+    left: 0;
+    top: 30vh;
+    z-index: 9999;
+
+}
+#option i
+{
+    background-color: darkblue;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    }
+#option .color-box
+{
+    border: solid 4px darkblue;
+    padding: 10px;
+    background-color: #ccc;
+}
+#option .color-box img
+{
+    width: 50px;
+    cursor: pointer;
+
+}
+#option .color-item
+{
+    width: 30px;
+    height: 30px;
+    background-color: #09c;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+
+
+
+.title
+{
+    font-family: sans-serif; 
+}
+
+.title h2 
+{
+    
+    font-size: 5rem;
+    font-weight: 900;
+    color: #f1f1f1;
+}
+
+
+.title h3
+{
+    position: absolute;
+    font-weight: 900;  
+    font-size: 2.5rem;  
+}
+
+.navbar-brand
+{
+    font-size: 1.5rem !important;
+}
+
+
+.text-mine
+{
+    color: blue ;
+}
+
+
+
+.feature i 
+{
+    color: blue !important;
+    font-size: 1.2rem;
+}
+.feature
+{
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    
+}
+
+.text-sm
+{
+    font-size: 0.9rem;
+}
+.text-opacity
+{
+    color: rgba(255,255,255,.65)!important;
+}
+nav::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    background-color: rgba(255,255,255,.1);
+    opacity: 0.7;
+    width: 90%;
+    height: 1px;
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: 100% 100%;
+
+}
+.layer-black
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+.navbar-nav .nav-link
+{
+    color: #Fff;
+    font-size: 0.85rem;
+    padding: 1rem;
+}
+header h4::before
+{
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2px;
+    right: 102%;
+    top: 50%;
+    background-color: white ;
+}
+header h4
+{
+    position: relative;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;    
+}
+@media (max-width:800px)
+{
+    header h4
+    {
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+.change1::after
+{
+    content: "\f07a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: black;
+    
+}
+
+.card-info
+{
+    font-size: 0.85rem;
+}
+.card-link
+{
+    bottom:  90%; 
+    right: 0.8rem;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+
+}
+.card img
+{
+    height: 35vh;
+}
+
+@media (max-width:800px)
+{
+    .card img
+    {
+        height: 40vh;
+    }
+}
+.card-link i
+{
+    font-size: 0.9rem;
+    color: black;
+}
+.card-link:hover i
+{
+    
+    
+        color: blue;
+    
+}
+
+
+.carousel-control-next
+{
+    right: -200px;
+    
+}
+.carousel-control-prev
+{
+    left: -200px ;
+
+}
+.carousel-control-prev-icon
+{
+    background-color: #000 !important;
+}
+.carousel-control-next-icon
+{
+    background-color: #000 !important;
+}
+
+
+.clients-body
+{
+    
+    
+    border: rgba(0, 0, 0, 0.05) solid 0.1rem;
+    padding: 1rem 2rem;
+}
+
+.clients-body img
+{
+    width: 6rem;
+    height: 6rem;
+}
+.clients-body h4
+{
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: 900;
+}
+.clients-body h5
+{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.dash-line
+{
+    width: 3.5rem;
+    height: 0.1rem;
+    background-color: rgba(255, 0, 0, 0.5);
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.carousel-indicators li 
+{
+    background-color: gray ;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    margin: 0.4rem;
+    margin-top: 1rem;
+}
+
+
+
+
+.menu ul li
+{
+    list-style: none;
+}
+.menu ul li .main-link 
+{
+    color: #000;
+    font-weight: 700;
+}
+.border-line
+{
+    border-bottom: solid 1px orange;
+}
+.menu ul li .link-menu
+{
+    color: #000; 
+    font-weight: 700; 
+}
+.line
+{
+    width: 80%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.12);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 8%;
+}
+.menu
+{
+    background-color: #f8f9fa!important;
+}
+footer
+{
+    background-color: #343a40!important;
+}
+
+#MENU ul
+{
+    width: 25%;
+}
+
+@media (min-width:0px) and (max-width:576px)
+{
+    #MENU ul
+{
+    width: 60%;
+}
+}
+@media (min-width:577px) and (max-width:768px)
+{
+    #MENU ul
+{
+    width: 50%;
+}
+}
+@media (min-width:769px) and (max-width:990px)
+{
+    #MENU ul
+{
+    width: 40%;
+}
+}
+
+
+
+
+
+
+.spinner {
+    margin: 250px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+    }
+
+.spinner > div {
+    background-color: #fff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+    }
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+    }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+    }
+}
+
+
+
+
